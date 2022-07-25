@@ -2,11 +2,15 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
+  mode: "development",
   entry: {
     index: "./src/index.js",
     load: "./src/firstLoad.js",
   },
   devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -14,7 +18,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Restaurant",
+      template: "./src/template.html",
     }),
   ],
+  optimization: {
+    runtimeChunk: "single",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 }

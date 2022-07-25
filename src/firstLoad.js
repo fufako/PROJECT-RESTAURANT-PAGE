@@ -1,4 +1,6 @@
-import { printHi } from "."
 const content = document.getElementById("content")
-console.log(content)
-printHi()
+const header = document.createElement("div")
+const headerContent = document.createElement("h1")
+const main = document.createElement("div")
+const hero = document.createElement("div")
+const heroContent = document.createElement("h2")

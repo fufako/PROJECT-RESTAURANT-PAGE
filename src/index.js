@@ -1,3 +1,1 @@
-export function printHi() {
-  console.log("form index.js")
-}
+import "./style.css"
