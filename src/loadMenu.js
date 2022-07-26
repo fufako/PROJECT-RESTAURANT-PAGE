@@ -3,6 +3,8 @@ import pastaImgImported from "./images/food2.png"
 import soupImgImported from "./images/food3.png"
 import riceImgImported from "./images/food4.png"
 
+content.innerHTML = ""
+
 const main = document.createElement("div")
 const hero = document.createElement("div")
 const heroTitle = document.createElement("h2")
