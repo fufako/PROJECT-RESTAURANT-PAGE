@@ -1,4 +1,5 @@
 import "./style.css"
-import { loadHome } from "./firstLoad"
-
+import { loadHome } from "./loadHome"
+import { loadPage } from "./loadPage"
+loadPage()
 loadHome()

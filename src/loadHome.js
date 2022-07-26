@@ -1,35 +1,10 @@
-const content = document.getElementById("content")
-const header = document.createElement("div")
-
 const main = document.createElement("div")
 const hero = document.createElement("div")
-
-function setupLayout() {
-  content.appendChild(header)
-  content.appendChild(main)
-  content.appendChild(hero)
-}
-
-const headerContent = document.createElement("h1")
-const headerMenu = document.createElement("div")
 const heroContent = document.createElement("h2")
 
-function setupHeader() {
-  header.id = "header"
-  headerMenu.id = "header-menu"
-  const menu = ["Home", "Menu", "Contact"]
-
-  header.appendChild(headerContent)
-  header.appendChild(headerMenu)
-
-  headerContent.textContent = "Spicy and Dicey"
-
-  menu.forEach((element) => {
-    let menuItem = document.createElement("p")
-    headerMenu.appendChild(menuItem)
-    menuItem.id = element
-    menuItem.textContent = element
-  })
+function setupLayout() {
+  content.appendChild(main)
+  content.appendChild(hero)
 }
 
 function setupMain() {
@@ -57,6 +32,5 @@ function setupMain() {
 
 export function loadHome() {
   setupLayout()
-  setupHeader()
   setupMain()
 }
