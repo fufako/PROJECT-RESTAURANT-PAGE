@@ -4,7 +4,6 @@ const heroContent = document.createElement("h2")
 
 function setupLayout() {
   content.appendChild(main)
-  content.appendChild(hero)
 }
 
 function setupMain() {

@@ -7,6 +7,7 @@ module.exports = {
     index: "./src/index.js",
     load: "./src/loadPage.js",
     home: "./src/loadHome.js",
+    menu: "./src/loadMenu.js",
   },
   devtool: "inline-source-map",
   devServer: {

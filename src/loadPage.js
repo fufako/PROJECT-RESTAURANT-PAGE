@@ -1,10 +1,8 @@
 const content = document.getElementById("content")
-const header = document.createElement("div")
+const header = document.getElementById("header")
 
 const headerContent = document.createElement("h1")
 const headerMenu = document.createElement("div")
-
-content.appendChild(header)
 
 function setupHeader() {
   header.id = "header"

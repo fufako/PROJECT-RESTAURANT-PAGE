@@ -3,6 +3,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Mochiy Pop One", sans-serif;
+  width: 100%;
 }
 #content {
   display: flex;
@@ -53,7 +54,6 @@ body {
 #hero {
   text-align: center;
   color: whitesmoke;
-  border-radius: 20px;
   padding: 10%;
 }
 #hero h2 {
@@ -77,7 +77,46 @@ body {
   background-color: #393d3f;
   color: whitesmoke;
 }
-
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  margin: 0;
+}
+#hero-menu {
+  height: 80%;
+  width: 50%;
+  min-width: 550px;
+  gap: 2px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 50px;
+}
+.dishes {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 2vh;
+  font-weight: lighter;
+  background-color: rgba(250, 245, 245, 0.9);
+  gap: 10px;
+}
+#hero-menu img {
+  width: 150px;
+  height: 150px;
+}
+#hero-title-menu {
+  color: whitesmoke;
+  border-bottom: 2px whitesmoke solid;
+}
 @media screen and (max-width: 768px) {
   #header {
     padding: 0 10px;
@@ -95,5 +134,17 @@ body {
   #hero h3 {
     font-size: 2vh;
     margin: 0;
+  }
+  #hero-menu img {
+    width: 75px;
+    height: 75px;
+  }
+  #hero-menu {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 20px;
+  }
+  .dishes {
+    font-size: 1.2vh;
   }
 }
