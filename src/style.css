@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 body {
   margin: 0;
   height: 100vh;
-  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Righteous", cursive;
   width: auto;
 }
 #content {
@@ -69,7 +70,7 @@ body {
   padding: 20px;
   border-radius: 20px;
   font-size: 2vh;
-  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Righteous", cursive;
   color: #393d3f;
   cursor: pointer;
   border: 0;
