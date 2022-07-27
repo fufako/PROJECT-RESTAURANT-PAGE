@@ -19,6 +19,7 @@ homeBtn.onclick = () => {
 }
 menuBtn.onclick = () => {
   content.innerHTML = ""
+  console.log("content should be cleared")
   loadMenu()
 }
 contactBtn.onclick = () => {

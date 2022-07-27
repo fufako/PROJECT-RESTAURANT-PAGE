@@ -11,7 +11,7 @@ function setupLayout() {
 function setupMain() {
   main.appendChild(heroTitle)
 
-  main.id = "main-menu"
+  main.id = "main-contact"
   main.appendChild(hero)
 
   hero.id = "hero-contact"

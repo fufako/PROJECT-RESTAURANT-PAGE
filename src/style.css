@@ -3,16 +3,17 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Mochiy Pop One", sans-serif;
-  width: 100%;
+  width: auto;
 }
 #content {
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  break-after: auto;
 }
 #header {
-  background-color: #393d3f;
+  background-image: url(./images/header-bg2.png);
+  background-size: cover;
   color: whitesmoke;
   display: flex;
   justify-content: space-between;
@@ -83,13 +84,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  margin: 0;
+}
+#main-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-image: url(./images/bg.jpg);
   background-size: cover;
   margin: 0;
 }
 #hero-menu {
-  height: 80%;
+  height: fit-content;
   width: 50%;
   min-width: 550px;
   gap: 2px;
@@ -97,6 +108,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0 50px;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+}
+.dishes h2 {
+  margin: 0;
+}
+.dishes p {
+  margin: 0;
 }
 .dishes {
   display: flex;
@@ -111,12 +130,13 @@ body {
   gap: 10px;
 }
 #hero-menu img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 #hero-title-menu {
   color: whitesmoke;
   border-bottom: 2px whitesmoke solid;
+  font-size: 4vh;
 }
 #hero-contact {
   display: flex;
@@ -130,10 +150,15 @@ body {
   background-color: rgba(250, 245, 245, 0.9);
   gap: 10px;
   border-radius: 10px;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
 }
 #contact-info img {
   width: 40px;
   height: 40px;
+}
+#contact-info p {
+  margin: 0 0 30px 0;
 }
 @media screen and (max-width: 768px) {
   #header {
@@ -160,11 +185,31 @@ body {
     height: 75px;
   }
   #hero-menu {
+    justify-content: center;
     height: fit-content;
     width: fit-content;
-    margin: 0 20px;
+    margin: 20px;
+    grid-template-columns: repeat(1, minmax(0, 0.6fr));
   }
   .dishes {
     font-size: 1.2vh;
+  }
+  #hero-contact {
+    margin: 0 20px;
+  }
+  #header-menu {
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    justify-content: center;
+  }
+  #header-menu p {
+    margin: 0;
+  }
+  #hero-title-menu {
+    margin-top: 50px;
+  }
+  #main-menu {
+    height: auto;
   }
 }
