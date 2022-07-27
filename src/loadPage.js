@@ -1,8 +1,12 @@
+import { loadHome } from "./loadHome.js"
+
 const content = document.getElementById("content")
 const header = document.getElementById("header")
 
 const headerContent = document.createElement("h1")
 const headerMenu = document.createElement("div")
+
+// headerContent.addEventListener("click", loadHome())
 
 function setupHeader() {
   header.id = "header"
