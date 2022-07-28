@@ -1,14 +1,14 @@
 import addressImgImported from "./images/address.png"
 import phoneImgImported from "./images/phone-call.png"
 import openImgImported from "./images/open.png"
-const main = document.createElement("div")
-const hero = document.createElement("div")
-const heroTitle = document.createElement("h2")
 
-function setupLayout() {
-  content.appendChild(main)
+function setupLayout(elem) {
+  content.appendChild(elem)
 }
 function setupMain() {
+  const main = document.createElement("div")
+  const hero = document.createElement("div")
+  const heroTitle = document.createElement("h2")
   main.appendChild(heroTitle)
 
   main.id = "main-contact"
@@ -53,9 +53,10 @@ function setupMain() {
   contactInfo.appendChild(openHours)
   contactInfo.appendChild(phoneImg)
   contactInfo.appendChild(phone)
+  return main
 }
 
 export function loadContact() {
-  setupLayout()
-  setupMain()
+  const main = setupMain()
+  setupLayout(main)
 }

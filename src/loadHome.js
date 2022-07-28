@@ -30,6 +30,7 @@ function setupMain() {
 }
 
 export function loadHome() {
+  content.innerHTML = ""
   setupLayout()
   setupMain()
 }
