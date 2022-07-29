@@ -30,7 +30,7 @@ body {
   cursor: pointer;
 }
 #header h1:hover {
-  color: #ced3dc;
+  color: #9bebb5;
 }
 
 #header-menu {
@@ -38,7 +38,7 @@ body {
   gap: 20px;
 }
 #header-menu p:hover {
-  color: #ced3dc;
+  color: #9bebb5;
 }
 
 #header-menu p {
@@ -129,6 +129,9 @@ body {
   font-weight: lighter;
   background-color: rgba(250, 245, 245, 0.9);
   gap: 10px;
+}
+.dishes:hover {
+  background-color: rgba(250, 245, 245, 1);
 }
 #hero-menu img {
   width: 200px;
