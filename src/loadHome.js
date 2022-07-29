@@ -1,6 +1,7 @@
 const main = document.createElement("div")
 const hero = document.createElement("div")
 const heroContent = document.createElement("h2")
+const orderBtn = document.createElement("button")
 
 function setupLayout() {
   content.appendChild(main)
@@ -17,7 +18,6 @@ function setupMain() {
   heroContent.id = "hero-content"
 
   const heroSubContent = document.createElement("h3")
-  const orderBtn = document.createElement("button")
 
   heroContent.appendChild(heroSubContent)
   heroContent.appendChild(orderBtn)
@@ -30,7 +30,6 @@ function setupMain() {
 }
 
 export function loadHome() {
-  content.innerHTML = ""
   setupLayout()
   setupMain()
 }

@@ -14,6 +14,12 @@ const menuBtn = document.getElementById("Menu")
 const contactBtn = document.getElementById("Contact")
 const orderBtn = document.querySelector("#order-button")
 
+const headTitle = document.querySelector("#header-title")
+
+headTitle.onclick = () => {
+  content.innerHTML = ""
+  loadHome()
+}
 homeBtn.onclick = () => {
   content.innerHTML = ""
   loadHome()
@@ -21,7 +27,6 @@ homeBtn.onclick = () => {
 ;[menuBtn, orderBtn].forEach((button) => {
   button.onclick = () => {
     content.innerHTML = ""
-    console.log("content should be cleared")
     loadMenu()
   }
 })
